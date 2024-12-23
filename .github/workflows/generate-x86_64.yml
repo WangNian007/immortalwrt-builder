@@ -34,7 +34,7 @@ jobs:
         run: |
           sudo apt-get -qq update
           #sudo apt-get -qq install build-essential libncurses5-dev libncursesw5-dev zlib1g-dev gawk git gettext libssl-dev xsltproc rsync wget unzip qemu-utils mkisofs
-          sudo apt-get -qq install build-essential libncurses-dev zlib1g-dev gawk git gettext libssl-dev xsltproc rsync wget unzip python3 python3-setuptools
+          sudo apt-get -qq install build-essential libncurses-dev zlib1g-dev gawk git gettext libssl-dev xsltproc rsync wget unzip python3 python3-setuptools qemu-utils
 
       - name: Setup Environment Variables
         run: |
