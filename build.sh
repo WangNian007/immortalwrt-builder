@@ -33,7 +33,7 @@ PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-smartdns luci-i18n-smartdns-zh-cn"
 
 # 文件助手
-PACKAGES="$PACKAGES luci-app-fileassistant"
+#PACKAGES="$PACKAGES luci-app-fileassistant"
 
 # Docker 组件
 PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn luci-i18n-docker-zh-cn"
