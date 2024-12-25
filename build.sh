@@ -48,7 +48,7 @@ PACKAGES="$PACKAGES luci-proto-wireguard"
 # 网络组件
 
 #上网时间控制
-PACKAGES="$PACKAGES luci-app-accesscontrol"
+#PACKAGES="$PACKAGES luci-app-accesscontrol"
 #DDNS-GO
 PACKAGES="$PACKAGES luci-app-ddns-go luci-i18n-ddns-go-zh-cn"
 #UPNP
