@@ -51,7 +51,7 @@ jobs:
       - name: Download Image Builder
         run: |
           wget $DOWNLOAD_BASE/releases/$VERSION/targets/x86/64/$VENDOR-imagebuilder-$VERSION-x86-64.Linux-x86_64.$FILE_SUFFIX
-          tar -I zstd $VENDOR-imagebuilder-$VERSION-x86-64.Linux-x86_64.$FILE_SUFFIX
+          tar -I zstd -xvf $VENDOR-imagebuilder-$VERSION-x86-64.Linux-x86_64.$FILE_SUFFIX
           rm -rf $VENDOR-imagebuilder-$VERSION-x86-64.Linux-x86_64.$FILE_SUFFIX
           cp -r $GITHUB_WORKSPACE/origin/* $GITHUB_WORKSPACE/$VENDOR-imagebuilder-$VERSION-x86-64.Linux-x86_64/
       
