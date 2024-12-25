@@ -26,6 +26,8 @@ PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
 # Passwall 代理
 PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
+#HomeProxy
+PACKAGES="$PACKAGES luci-app-homeproxy"
 
 # 常用的网络存储组件
 
@@ -45,15 +47,27 @@ PACKAGES="$PACKAGES luci-proto-wireguard"
 
 # 网络组件
 
+#上网时间控制
+PACKAGES="$PACKAGES luci-app-accesscontrol"
+#DDNS-GO
+PACKAGES="$PACKAGES luci-app-ddns-go luci-i18n-ddns-go-zh-cn"
+#UPNP
+PACKAGES="$PACKAGES luci-app-upnp"
+#IP/MAC绑定
+PACKAGES="$PACKAGES luci-app-arpbind"
+
 # EQoS 网速控制
 PACKAGES="$PACKAGES luci-i18n-eqos-zh-cn"
+#Qos
+PACKAGES="$PACKAGES luci-app-qos"
+
 # 多线多拨与负载均衡
 PACKAGES="$PACKAGES luci-app-syncdial luci-i18n-mwan3-zh-cn"
 # 宽带监控 Nlbwmon
 PACKAGES="$PACKAGES luci-i18n-nlbwmon-zh-cn"
 
 # 界面翻译补全
-PACKAGES="$PACKAGES luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-base-zh-cn luci-i18n-package-manager-zh-cn luci-i18n-firewall-zh-cn"
 
 # Packages 文件夹下的 ipk 包
 PACKAGES="$PACKAGES luci-i18n-wrtbwmon-zh-cn"
@@ -69,7 +83,10 @@ PACKAGES="$PACKAGES lrzsz"
 # OpenSSH
 PACKAGES="$PACKAGES openssh-server openssh-client"
 # Netdata 系统监控界面
-PACKAGES="$PACKAGES netdata"
+PACKAGES="$PACKAGES netdata luci-app-netdata luci-i18n-netdata-zh-cn"
+
+#自动重启
+PACKAGES="$PACKAGES luci-app-autoreboot"
 
 # 一些自定义文件
 FILES="files"
