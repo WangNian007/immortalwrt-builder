@@ -52,9 +52,9 @@ PACKAGES="$PACKAGES luci-proto-wireguard"
 #DDNS-GO
 PACKAGES="$PACKAGES luci-app-ddns-go luci-i18n-ddns-go-zh-cn"
 #UPNP
-PACKAGES="$PACKAGES luci-app-upnp"
+PACKAGES="$PACKAGES luci-app-upnp luci-i18n-upnp-zh-cn"
 #IP/MAC绑定
-PACKAGES="$PACKAGES luci-app-arpbind"
+PACKAGES="$PACKAGES luci-app-arpbind luci-i18n-arpbind-zh-cn"
 
 # EQoS 网速控制
 PACKAGES="$PACKAGES luci-i18n-eqos-zh-cn"
