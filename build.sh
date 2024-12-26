@@ -86,7 +86,7 @@ PACKAGES="$PACKAGES openssh-server openssh-client"
 PACKAGES="$PACKAGES netdata luci-app-netdata luci-i18n-netdata-zh-cn"
 
 #自动重启
-PACKAGES="$PACKAGES luci-app-autoreboot"
+PACKAGES="$PACKAGES luci-app-autoreboot luci-i18n-autoreboot-zh-cn"
 
 # 一些自定义文件
 FILES="files"
