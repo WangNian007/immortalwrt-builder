@@ -33,6 +33,8 @@ PACKAGES="$PACKAGES luci-app-homeproxy"
 
 #SmartDns
 PACKAGES="$PACKAGES luci-app-smartdns luci-i18n-smartdns-zh-cn"
+#luci-app-adguardhome
+PACKAGES="$PACKAGES luci-app-adguardhome"
 
 # 文件助手
 #PACKAGES="$PACKAGES luci-app-fileassistant"
