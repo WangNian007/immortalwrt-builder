@@ -27,7 +27,7 @@ PACKAGES="$PACKAGES luci-app-openclash"
 # Passwall 代理
 PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 #HomeProxy
-PACKAGES="$PACKAGES luci-app-homeproxy"
+PACKAGES="$PACKAGES luci-app-homeproxy luci-i18n-homeproxy-zh-cn"
 
 # 常用的网络存储组件
 
