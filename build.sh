@@ -40,7 +40,7 @@ PACKAGES="$PACKAGES luci-app-adguardhome"
 #PACKAGES="$PACKAGES luci-app-fileassistant"
 
 # Docker 组件
-PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn luci-i18n-docker-zh-cn"
+#PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn luci-i18n-docker-zh-cn"
 
 # VPN 类
 
@@ -94,6 +94,6 @@ PACKAGES="$PACKAGES luci-app-autoreboot luci-i18n-autoreboot-zh-cn"
 FILES="files"
 
 # 禁用 openssh-server 的 sshd 服务和 docker 的 dockerd 服务以防止冲突
-DISABLED_SERVICES="sshd dockerd"
+#DISABLED_SERVICES="sshd dockerd"
 
 make image PROFILE="$PROFILE" PACKAGES="$PACKAGES" FILES="$FILES" DISABLED_SERVICES="$DISABLED_SERVICES"
