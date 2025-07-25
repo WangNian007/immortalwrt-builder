@@ -82,8 +82,7 @@ PACKAGES="$PACKAGES zsh"
 PACKAGES="$PACKAGES vim-fuller"
 # X/Y/ZMODEM 文件传输
 PACKAGES="$PACKAGES lrzsz"
-# OpenSSH
-PACKAGES="$PACKAGES openssh-server openssh-client"
+
 # Netdata 系统监控界面
 PACKAGES="$PACKAGES netdata luci-app-netdata luci-i18n-netdata-zh-cn"
 
