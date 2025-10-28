@@ -18,7 +18,7 @@ PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 # CPU 占用限制
 PACKAGES="$PACKAGES luci-i18n-cpulimit-zh-cn"
 # collectd 统计
-PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn collectd-mod-mqtt"
+PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn collectd-mod-mqtt collectd-mod-conntrack collectd-mod-ping"
 
 # 常用软件服务
 
