@@ -24,8 +24,7 @@ PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn collectd-mod-mqtt collectd-mod-co
 
 # OpenClash 代理
 PACKAGES="$PACKAGES luci-app-openclash"
-# Passwall 代理
-PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
+
 #HomeProxy
 PACKAGES="$PACKAGES luci-app-homeproxy luci-i18n-homeproxy-zh-cn"
 
@@ -33,24 +32,13 @@ PACKAGES="$PACKAGES luci-app-homeproxy luci-i18n-homeproxy-zh-cn"
 
 #SmartDns
 PACKAGES="$PACKAGES luci-app-smartdns luci-i18n-smartdns-zh-cn"
-#luci-app-adguardhome
-PACKAGES="$PACKAGES luci-app-adguardhome"
 
-# 文件助手
-#PACKAGES="$PACKAGES luci-app-fileassistant"
 
-# Docker 组件
-#PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn luci-i18n-docker-zh-cn"
-
-# VPN 类
 
 #wireguard
 PACKAGES="$PACKAGES luci-proto-wireguard"
 
-# 网络组件
 
-#上网时间控制
-#PACKAGES="$PACKAGES luci-app-accesscontrol"
 #DDNS-GO
 PACKAGES="$PACKAGES luci-app-ddns-go luci-i18n-ddns-go-zh-cn"
 #UPNP
@@ -88,6 +76,12 @@ PACKAGES="$PACKAGES netdata luci-app-netdata luci-i18n-netdata-zh-cn"
 
 #自动重启
 PACKAGES="$PACKAGES luci-app-autoreboot luci-i18n-autoreboot-zh-cn"
+
+#nikki
+PACKAGES="$PACKAGES nikki luci-app-nikki luci-i18n-nikki-zh-cn"
+
+#bandix
+PACKAGES="$PACKAGES bandix luci-app-bandix luci-i18n-bandix-zh-cn"
 
 # 一些自定义文件
 FILES="files"
