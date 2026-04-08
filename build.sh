@@ -59,9 +59,6 @@ PACKAGES="$PACKAGES luci-i18n-nlbwmon-zh-cn"
 # 界面翻译补全
 PACKAGES="$PACKAGES luci-i18n-base-zh-cn luci-i18n-package-manager-zh-cn luci-i18n-firewall-zh-cn"
 
-# Packages 文件夹下的 ipk 包
-PACKAGES="$PACKAGES luci-i18n-wrtbwmon-zh-cn"
-
 # 一些其他可能有用的包
 
 # zsh 终端
