@@ -54,13 +54,7 @@ jobs:
           tar -I zstd -xvf $VENDOR-imagebuilder-$VERSION-x86-64.Linux-x86_64.$FILE_SUFFIX
           rm -rf $VENDOR-imagebuilder-$VERSION-x86-64.Linux-x86_64.$FILE_SUFFIX
           cp -r $GITHUB_WORKSPACE/origin/* $GITHUB_WORKSPACE/$VENDOR-imagebuilder-$VERSION-x86-64.Linux-x86_64/
-
-      - name: Add Nikki Repo
-        working-directory: ${{ env.VENDOR }}-imagebuilder-${{ env.VERSION }}-x86-64.Linux-x86_64
-        run: |
-          echo "src/gz nikki https://nikkinikki.pages.dev/openwrt-25.12/x86_64/nikki" >> repositories.conf
-          echo "option check_signature 0" >> repositories.conf
-      
+          
       - name: Download External Packages
         working-directory: ${{ env.VENDOR }}-imagebuilder-${{ env.VERSION }}-x86-64.Linux-x86_64
         run: |

@@ -78,7 +78,7 @@ PACKAGES="$PACKAGES netdata luci-app-netdata luci-i18n-netdata-zh-cn"
 PACKAGES="$PACKAGES luci-app-autoreboot luci-i18n-autoreboot-zh-cn"
 
 #nikki
-PACKAGES="$PACKAGES nikki luci-app-nikki luci-i18n-nikki-zh-cn"
+#PACKAGES="$PACKAGES nikki luci-app-nikki luci-i18n-nikki-zh-cn"
 
 #bandix
 PACKAGES="$PACKAGES bandix luci-app-bandix luci-i18n-bandix-zh-cn"
