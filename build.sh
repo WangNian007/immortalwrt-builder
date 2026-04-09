@@ -78,7 +78,7 @@ PACKAGES="$PACKAGES luci-app-autoreboot luci-i18n-autoreboot-zh-cn"
 #PACKAGES="$PACKAGES nikki luci-app-nikki luci-i18n-nikki-zh-cn"
 
 #bandix
-PACKAGES="$PACKAGES bandix luci-app-bandix luci-i18n-bandix-zh-cn"
+#PACKAGES="$PACKAGES bandix luci-app-bandix luci-i18n-bandix-zh-cn"
 
 # 一些自定义文件
 FILES="files"
