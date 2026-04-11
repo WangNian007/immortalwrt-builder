@@ -11,12 +11,10 @@ PACKAGES=""
 # Argon 主题
 PACKAGES="$PACKAGES luci-theme-argon luci-i18n-argon-config-zh-cn"
 
-# 常用系统管理组件
-
 # Diskman 磁盘管理
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
-# CPU 占用限制
-PACKAGES="$PACKAGES luci-i18n-cpulimit-zh-cn"
+
+
 # collectd 统计
 PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn collectd-mod-mqtt collectd-mod-conntrack collectd-mod-thermal collectd-mod-uptime collectd-mod-dhcpleases collectd-mod-ping"
 
@@ -24,7 +22,6 @@ PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn collectd-mod-mqtt collectd-mod-co
 
 # OpenClash 代理
 PACKAGES="$PACKAGES luci-app-openclash"
-
 #UPNP
 PACKAGES="$PACKAGES luci-app-upnp luci-i18n-upnp-zh-cn"
 #IP/MAC绑定
@@ -40,7 +37,6 @@ PACKAGES="$PACKAGES luci-i18n-base-zh-cn luci-i18n-package-manager-zh-cn luci-i1
 PACKAGES="$PACKAGES luci-i18n-wrtbwmon-zh-cn"
 
 # 一些其他可能有用的包
-
 PACKAGES="$PACKAGES openssh-sftp-server"
 
 # zsh 终端
@@ -49,10 +45,6 @@ PACKAGES="$PACKAGES zsh"
 PACKAGES="$PACKAGES vim-fuller"
 # X/Y/ZMODEM 文件传输
 PACKAGES="$PACKAGES lrzsz"
-
-# Netdata 系统监控界面
-PACKAGES="$PACKAGES netdata luci-app-netdata luci-i18n-netdata-zh-cn"
-
 #自动重启
 PACKAGES="$PACKAGES luci-app-autoreboot luci-i18n-autoreboot-zh-cn"
 
