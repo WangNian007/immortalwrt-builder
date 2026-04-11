@@ -24,47 +24,12 @@ PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn collectd-mod-mqtt collectd-mod-co
 
 # OpenClash 代理
 PACKAGES="$PACKAGES luci-app-openclash"
-# Passwall 代理
-PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
-#HomeProxy
-PACKAGES="$PACKAGES luci-app-homeproxy luci-i18n-homeproxy-zh-cn"
 
-# 常用的网络存储组件
-
-#SmartDns
-PACKAGES="$PACKAGES luci-app-smartdns luci-i18n-smartdns-zh-cn"
-#luci-app-adguardhome
-PACKAGES="$PACKAGES luci-app-adguardhome"
-
-# 文件助手
-#PACKAGES="$PACKAGES luci-app-fileassistant"
-
-# Docker 组件
-#PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn luci-i18n-docker-zh-cn"
-
-# VPN 类
-
-#wireguard
-PACKAGES="$PACKAGES luci-proto-wireguard"
-
-# 网络组件
-
-#上网时间控制
-#PACKAGES="$PACKAGES luci-app-accesscontrol"
-#DDNS-GO
-PACKAGES="$PACKAGES luci-app-ddns-go luci-i18n-ddns-go-zh-cn"
 #UPNP
 PACKAGES="$PACKAGES luci-app-upnp luci-i18n-upnp-zh-cn"
 #IP/MAC绑定
 PACKAGES="$PACKAGES luci-app-arpbind luci-i18n-arpbind-zh-cn"
 
-# EQoS 网速控制
-PACKAGES="$PACKAGES luci-i18n-eqos-zh-cn"
-#Qos
-PACKAGES="$PACKAGES luci-app-qos"
-
-# 多线多拨与负载均衡
-PACKAGES="$PACKAGES luci-app-syncdial luci-i18n-mwan3-zh-cn"
 # 宽带监控 Nlbwmon
 PACKAGES="$PACKAGES luci-i18n-nlbwmon-zh-cn"
 
@@ -75,6 +40,8 @@ PACKAGES="$PACKAGES luci-i18n-base-zh-cn luci-i18n-package-manager-zh-cn luci-i1
 PACKAGES="$PACKAGES luci-i18n-wrtbwmon-zh-cn"
 
 # 一些其他可能有用的包
+
+PACKAGES="$PACKAGES openssh-sftp-server"
 
 # zsh 终端
 PACKAGES="$PACKAGES zsh"

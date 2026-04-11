@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# 清理默认配置（非常关键）
+uci -q delete network.lan
+uci -q delete network.wan
+uci -q delete network.br_lan
+
+########################
+# LAN bridge
+########################
+uci set network.br_lan='device'
+uci set network.br_lan.name='br-lan'
+uci set network.br_lan.type='bridge'
+uci set network.br_lan.mtu='1500'
+uci set network.br_lan.mtu6='1500'
+
+uci add_list network.br_lan.ports='eth1'
+uci add_list network.br_lan.ports='eth2'
+uci add_list network.br_lan.ports='eth3'
+
+########################
+# LAN interface
+########################
+uci set network.lan='interface'
+uci set network.lan.device='br-lan'
+uci set network.lan.proto='static'
+uci set network.lan.ipaddr='192.168.1.1'
+uci set network.lan.netmask='255.255.255.0'
+uci set network.lan.ip6assign='60'
+
+########################
+# WAN interface（PPPoE）
+########################
+uci set network.wan='interface'
+uci set network.wan.device='eth0'
+uci set network.wan.proto='pppoe'
+uci set network.wan.ipv6='auto'
+
+########################
+# 提交
+########################
+uci commit network
