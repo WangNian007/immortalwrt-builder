@@ -15,8 +15,9 @@ PACKAGES="$PACKAGES luci-theme-argon luci-i18n-argon-config-zh-cn"
 
 # Diskman 磁盘管理
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
-# CPU 占用限制
-PACKAGES="$PACKAGES luci-i18n-cpulimit-zh-cn"
+
+
+
 # collectd 统计
 PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn collectd-mod-mqtt collectd-mod-conntrack collectd-mod-thermal collectd-mod-uptime collectd-mod-dhcpleases collectd-mod-ping"
 
@@ -28,16 +29,6 @@ PACKAGES="$PACKAGES luci-app-openclash"
 #HomeProxy
 PACKAGES="$PACKAGES luci-app-homeproxy luci-i18n-homeproxy-zh-cn"
 
-# 常用的网络存储组件
-
-#SmartDns
-PACKAGES="$PACKAGES luci-app-smartdns luci-i18n-smartdns-zh-cn"
-
-
-
-#wireguard
-PACKAGES="$PACKAGES luci-proto-wireguard"
-
 
 #DDNS-GO
 PACKAGES="$PACKAGES luci-app-ddns-go luci-i18n-ddns-go-zh-cn"
@@ -46,13 +37,6 @@ PACKAGES="$PACKAGES luci-app-upnp luci-i18n-upnp-zh-cn"
 #IP/MAC绑定
 PACKAGES="$PACKAGES luci-app-arpbind luci-i18n-arpbind-zh-cn"
 
-# EQoS 网速控制
-PACKAGES="$PACKAGES luci-i18n-eqos-zh-cn"
-#Qos
-PACKAGES="$PACKAGES luci-app-qos"
-
-# 多线多拨与负载均衡
-PACKAGES="$PACKAGES luci-app-syncdial luci-i18n-mwan3-zh-cn"
 # 宽带监控 Nlbwmon
 PACKAGES="$PACKAGES luci-i18n-nlbwmon-zh-cn"
 
@@ -83,7 +67,5 @@ PACKAGES="$PACKAGES luci-app-autoreboot luci-i18n-autoreboot-zh-cn"
 # 一些自定义文件
 FILES="files"
 
-# 禁用 openssh-server 的 sshd 服务和 docker 的 dockerd 服务以防止冲突
-#DISABLED_SERVICES="sshd dockerd"
 
-make image PROFILE="$PROFILE" PACKAGES="$PACKAGES" FILES="$FILES" DISABLED_SERVICES="$DISABLED_SERVICES"
+make image PROFILE="$PROFILE" PACKAGES="$PACKAGES" FILES="$FILES" 
