@@ -1,13 +1,12 @@
 #!/bin/sh
 
-# 避免重复添加（可选）
-if ! uci show dhcp | grep -q "98:17:F1:6E:AB:50"; then
-    uci add dhcp host
-    uci set dhcp.@host[-1].name='AX5400Pro'
-    uci add_list dhcp.@host[-1].mac='98:17:F1:6E:AB:50'
-    uci set dhcp.@host[-1].ip='192.168.1.250'
-    uci set dhcp.@host[-1].leasetime='infinite'
-    uci commit dhcp
-fi
+uci add dhcp host
+uci set dhcp.@host[-1].name='AX5400Pro'
+uci add_list dhcp.@host[-1].mac='98:17:F1:6E:AB:50'
+uci set dhcp.@host[-1].ip='192.168.1.250'
+uci set dhcp.@host[-1].leasetime='infinite'
+uci commit dhcp
 
 exit 0
+
+

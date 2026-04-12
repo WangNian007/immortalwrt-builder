@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# 清理默认配置（非常关键）
-uci -q delete network.lan
-uci -q delete network.wan
-uci -q delete network.br_lan
-
 ########################
 # LAN bridge
 ########################
@@ -40,4 +35,6 @@ uci set network.wan.ipv6='auto'
 # 提交
 ########################
 uci commit network
+
+exit 0
 
