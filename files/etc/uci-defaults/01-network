@@ -35,6 +35,7 @@ uci set network.wan.ipv6='auto'
 # 提交
 ########################
 uci commit network
+/etc/init.d/network restart
 
 exit 0
 
