@@ -52,12 +52,15 @@ uci commit dhcp
 #openclash 内核
 mkdir -p /etc/openclash/core
 
-cp /tmp/mihomo-linux-amd64-v2-* /etc/openclash/core/clash_mate
+cp /mihomo-linux-amd64-v2-* /etc/openclash/core/clash_mate
 chmod 777 /etc/openclash/core/clash_mate
 
 #nikki 内核
-cp /tmp/mihomo-linux-amd64-v2-* /usr/bin/mihomo
+cp /mihomo-linux-amd64-v2-* /usr/bin/mihomo
 chmod 777 /usr/bin/mihomo
+
+#删除临时内核
+rm /mihomo-linux-amd64-v2-*
 
 exit 0
 

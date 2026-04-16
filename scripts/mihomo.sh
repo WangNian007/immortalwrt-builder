@@ -15,7 +15,8 @@ wget "${url}"
 gunzip mihomo-linux-amd64-v2-*.gz
 
 
-#文件写入临时目录
-cp mihomo-linux-amd64-v2-* files/tmp/
+
+#文件写入根目录
+cp mihomo-linux-amd64-v2-* files/
 
 exit 0
