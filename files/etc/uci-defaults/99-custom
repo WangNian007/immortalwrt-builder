@@ -48,6 +48,17 @@ uci commit dhcp
 
 /etc/init.d/dnsmasq restart
 
+
+#openclash 内核
+mkdir -p /etc/openclash/core
+
+cp /tmp/mihomo-linux-amd64-v2-* /etc/openclash/core/clash_mate
+chmod 777 /etc/openclash/core/clash_mate
+
+#nikki 内核
+cp /tmp/mihomo-linux-amd64-v2-* /usr/bin/mihomo
+chmod 777 /usr/bin/mihomo
+
 exit 0
 
 
