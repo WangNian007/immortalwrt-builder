@@ -52,8 +52,8 @@ uci commit dhcp
 #openclash 内核
 mkdir -p /etc/openclash/core
 
-cp /mihomo-linux-amd64-v2-* /etc/openclash/core/clash_mate
-chmod 777 /etc/openclash/core/clash_mate
+cp /mihomo-linux-amd64-v2-* /etc/openclash/core/clash_meta
+chmod 777 /etc/openclash/core/clash_meta
 
 #nikki 内核
 cp /mihomo-linux-amd64-v2-* /usr/bin/mihomo
